@@ -1,24 +1,12 @@
-{
-  "nome": "Merari",
-  "sobrenome": "Dayvson",
-  "enderecos": [
+[
     {
-      "rua": "R1",
-      "numero": 32
+        "nome": "merari",
+        "idade": 35,
+        "sexo": "M"
     },
     {
-      "rua": "R2",
-      "numero": 55
+        "nome": "lais",
+        "idade": 16,
+        "sexo": "F"
     }
-  ],
-  "altura": 1.8,
-  "numeros_preferidos": [
-    2,
-    4,
-    6,
-    8,
-    10
-  ],
-  "dev": true,
-  "nada": null
-}
+]

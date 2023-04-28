@@ -2,19 +2,30 @@ import json
 
 CAMINHO_DO_ARQUIVO = 'teste2.json'
 
+pessoa = {}
+cadastro = []
+while True:
 
-pessoa = {
-    'nome': 'Merari',
-    'sobrenome': 'Dayvson',
-    'enderecos': [
-        {'rua': 'R1', 'numero': 32},
-        {'rua': 'R2', 'numero': 55},
-    ],
-    'altura': 1.8,
-    'numeros_preferidos': (2, 4, 6, 8, 10),
-    'dev': True,
-    'nada': None,
-}
+    pessoa['nome'] = input('Nome: ')
+    pessoa['idade'] = int(input('Idade: '))
+    pessoa['sexo'] = input('Sexo [M/F]: ').upper()[0]
+    cadastro.append(pessoa.copy())
+    pessoa.clear()
 
-with open(CAMINHO_DO_ARQUIVO, 'w', encoding= 'utf8') as arquivo:
-    json.dump(pessoa, arquivo, indent= 2, ensure_ascii= False)
+    resp = input('Continuar? ')
+    if resp in 'Nn':
+        break
+
+# Escrevendo no JSON
+
+with open(CAMINHO_DO_ARQUIVO, 'w', encoding='utf-8') as arquivo:
+    json.dump(cadastro, arquivo, ensure_ascii=False, indent=4)
+
+# Lendo do JSON
+
+with open(CAMINHO_DO_ARQUIVO, 'r', encoding='utf8') as arquivo:
+    cadastro = json.load(arquivo)
+    for pessoa in cadastro:
+        print(f'Nome: {pessoa["nome"]}')
+        print(f'Idade: {pessoa["idade"]}')
+        print(f'Sexo: {pessoa["sexo"]}')
