@@ -7,7 +7,7 @@ Curso de Python 3 do Básico Ao Avançado (com projetos reais)
 Python 3 completo: PySide6, Django, Selenium, Regexp, Testes, TDD, POO, Design Patterns GoF, algoritmos e programação.
 
 # Características
-Curso ministrado por Luiz Otávio Miranda atravez da prataforma UDEMY.
+Curso ministrado por Luiz Otávio Miranda pela prataforma UDEMY.
 
 - Python 3 básico (com lógica de programação)
 - Python 3 intermediário (com programação procedural e funcional)
