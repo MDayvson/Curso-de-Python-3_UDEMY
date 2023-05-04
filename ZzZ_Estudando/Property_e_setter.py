@@ -17,13 +17,13 @@ class Pessoa:
         return self._idade
 
 
-    @nome.setter                          # Setter usado para auterar um valor, não usa return
+    @nome.setter                          # Setter usado para alterar um valor, não usa return
     def nome(self, valor=None):
         print('Entrei no setter nome')
         self._nome = valor
 
 
-    @idade.setter                         # Setter usado para auterar um valor, não usa return
+    @idade.setter                         # Setter usado para alterar um valor, não usa return
     def idade(self, valor=None):
         print('Entrei no setter idade')
         self._idade = valor
