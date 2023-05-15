@@ -2,6 +2,7 @@ import datetime
 pessoa = {}
 lista = []
 
+
 def leiavirgula(msg):
     valido = False
     while not valido:
