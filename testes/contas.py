@@ -12,7 +12,7 @@ class Conta(abc.ABC):
         ...
 
     def extrato(self, msg: str = '') -> None:
-        print(f'O seu saldo é R$ {self.saldo:.2f} | {msg}')
+        print(f'{msg} | O seu saldo é R$ {self.saldo:.2f}')
         print('---')
 
     def depositar(self, valor: float):
