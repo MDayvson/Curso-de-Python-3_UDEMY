@@ -51,8 +51,8 @@ print(template.substitute(dados))
 
 # pode vir de um arquivo txt externo.
 
-# CAMINHO_ARQUIVO = Path(__file__).parent / 'aula298.txt'
-# with open(CAMINHO_ARQUIVO, 'r') as arquivo:
-#     texto = arquivo.read()
-#     template = MyTemplate(texto)
-#     print(template.substitute(dados))
+CAMINHO_ARQUIVO = Path(__file__).parent / 'aula298.txt'
+with open(CAMINHO_ARQUIVO, 'r', encoding='utf8') as arquivo:
+    texto = arquivo.read()
+    template = MyTemplate(texto)
+    print(template.substitute(dados))
