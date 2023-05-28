@@ -1,0 +1,51 @@
+.heading {
+    transition: all 300ms ease-in-out;
+}
+
+.heading:hover {
+    background-color: red;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:checked {
+    width: 20px;
+    height: 20px;
+}
+
+input:checked + p {
+    background-color: red;
+}
+
+input:required {
+    background-color: aquamarine;
+}
+
+/* ##########################*/
+/* pseudo-elementos */
+
+ul li::after {
+    content: ' - ';
+    color: red;
+ 
+}
+ul li::before {
+    content: ' * ';
+    color: red;
+}
+
+p::first-letter {
+    font-size: 50px;
+    color: darkred;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+p::selection {
+    background-color: black;
+    color: white;
+}
