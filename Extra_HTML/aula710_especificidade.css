@@ -1,0 +1,24 @@
+/*
+ID    Classes, atributos e pseudo-class      Elementos e pseudo-elementos
+
+!important
+
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity
+
+https://www.w3.org/TR/selectors-3/#specificity
+
+https://specificity.keegan.st/
+*/
+
+body#b.bclass p#9.p::selection:hover {
+    background-color: purple;
+}
+
+#p {
+    background-color: red;
+}
+
+#p.p {
+    background-color: yellow;
+}
+
