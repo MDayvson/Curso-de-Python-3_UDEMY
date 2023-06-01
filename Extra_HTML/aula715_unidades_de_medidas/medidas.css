@@ -1,8 +1,9 @@
 html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
     /* deixa a fonte em 10px, para usar todas as fontes do site baseadas nesse tamanho, com a unidade (rem) */
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
