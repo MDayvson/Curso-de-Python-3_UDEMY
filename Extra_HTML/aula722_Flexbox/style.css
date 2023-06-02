@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    background-color: yellow;  
+}
+
+.flex-item {
+    flex: 1 1 320px;
+    height: 200px;
+    color: white;
+    background-color: red;
+}
+
+.flex-item:nth-child(2) {
+    flex: 2 1 320px ;
+    background-color: purple;
+}
