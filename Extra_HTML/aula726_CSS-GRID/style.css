@@ -7,7 +7,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     grid-template-rows: 2fr 1fr;
     gap: 30px;
 }
@@ -16,4 +16,16 @@ body {
     background-color: tomato;
     min-height: 100px;
 
+}
+
+.grid div:nth-child(5) {
+    background-color: darkred;
+    grid-row: span 1;
+    grid-column: span 2;
+}
+
+@media (max-width:768px) {
+    .grid div:nth-child(5) {
+        grid-column: span 1;
+    }
 }
