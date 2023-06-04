@@ -3,12 +3,14 @@ font-family: 'Open Sans', sans-serif; */
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1,
@@ -26,7 +28,10 @@ h1 {
 }
 
 h2 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
 }
 
 h3 {
@@ -47,4 +52,8 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin-bottom: 3rem;
 }
