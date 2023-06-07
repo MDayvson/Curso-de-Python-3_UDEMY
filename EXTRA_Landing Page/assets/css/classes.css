@@ -1,9 +1,4 @@
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .main-bg {
     background-image: url('../img/main-bg.svg.svg');
     background-size: cover;
@@ -29,4 +24,9 @@
 
 .menu-spacing {
     height: 6.5rem;
+}
+
+body .full-width {
+    width: 100%;
+    flex:  1 1 100%;
 }
