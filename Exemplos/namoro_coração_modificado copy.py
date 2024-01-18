@@ -15,6 +15,18 @@ root.title('Aceitas?')
 root.geometry('600x600')
 root.configure(background='#ffc8dd')
 
+
+# # Carregar imagem para o papel de parede
+# from PIL import Image, ImageTk
+# wallpaper_path = pathlib.Path(__file__).parent / 'wallpaper.jpg'
+# wallpaper_image = Image.open(wallpaper_path)
+# wallpaper_photo = ImageTk.PhotoImage(wallpaper_image)
+
+# # Configurar o papel de parede
+# background_label = Label(root, image=wallpaper_photo)
+# background_label.place(relwidth=1, relheight=1)
+
+
 # caminho da música
 CAMINHO_MUSICA = pathlib.Path(__file__).parent / 'Forever Star.mp3'
 pygame.mixer.music.load(CAMINHO_MUSICA)
