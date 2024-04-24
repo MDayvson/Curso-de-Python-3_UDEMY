@@ -38,7 +38,7 @@ def move_button_1(e):
         button_1.place(x=x, y=y)
 
 def accepted():
-    messagebox.showinfo('Meu amor', 'Eu te amo meu amor, lanchinho mais tarde?')
+    messagebox.showinfo('Meu amor', 'Eu te amo meu amor, Ouça a musica.')
     threading.Timer(1, draw_heart).start()  # Aguarda 1 segundo antes de chamar a função draw_heart
 
 def denied():
